@@ -1,5 +1,5 @@
 
-const GenerateObject = [
+const GenerateArray = [
     ["Cat", "Box", "Sunshine", "Funny", "Friends"],
     ["Adventure", "Sunglasses", "Puzzle", "Headache", "Ice Cream"],
     ["Cloud", "Explore", "Library", "Umbrella", "Laughter"],
@@ -25,4 +25,4 @@ const GenerateObject = [
     ["Honey","Love","Exist","Support","Aunt"]
 
 ]
-export default GenerateObject;
+export default GenerateArray;

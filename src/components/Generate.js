@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import GenerateObject from './GenerateObject';
+import GenerateArray from './GenerateArray';
 
 function RandomWordsGenerator() {
   const [randomWordsArray, setRandomWordsArray] = useState([]);
 
   const generateRandomWordsArray = () => {
-    if (GenerateObject.length === 0) {
+    if (GenerateArray.length === 0) {
       console.log('No more arrays to select.');
       return;
     }
-    const randomArrayIndex = Math.floor(Math.random() * GenerateObject.length);
-    const selectedArray = [...GenerateObject[randomArrayIndex]];
-    GenerateObject.splice(randomArrayIndex, 1);
+    const randomArrayIndex = Math.floor(Math.random() * GenerateArray.length);
+    const selectedArray = [...GenerateArray[randomArrayIndex]];
+    GenerateArray.splice(randomArrayIndex, 1);
     setRandomWordsArray(selectedArray);
   };
 
